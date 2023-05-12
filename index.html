@@ -8,141 +8,135 @@
 
     <title>Document</title>
   </head>
-  <body class="mx-20 font-[coconat-bold]">
+  <body class="lg:mx-20 font-[coconat-bold] bg-gray-100">
     <header
-      class="fixed top-0 left-20 right-20 z-50 flex justify-between items-center h-[80px] my-[30px] bg-white bg-opacity-100 transform transition-all duration-500 mt-0"
+      class="fixed top-0 left-0 right-0 z-50 flex flex-wrap justify-between items-center py-5 px-10 bg-gray-100 bg-opacity-100 lg:px-20"
     >
-      <img src="img/bel.png" alt="" class="h-10 text-base cursor" />
-      <img src="img/wol.png" alt="" class="h-8 text-base cursor" />
-      <img src="img/men.png" alt="" class="h-10 cursor" />
+      <img
+        src="img/bel.png"
+        alt=""
+        class="h-8 lg:h-10 text-base cursor-pointer flex-grow-0 flex-shrink-0"
+      />
+      <img
+        src="img/wol.png"
+        alt=""
+        class="h-6 lg:h-8 text-base cursor-pointer flex-grow-0 flex-shrink-0"
+      />
+      <img
+        src="img/men.png"
+        alt=""
+        class="h-8 lg:h-10 cursor-pointer flex-grow-0 flex-shrink-0"
+      />
     </header>
 
-    <section>
-      <div class="relative">
-        <img src="img/hero.jpeg" alt="" class="h-1/2" />
-      </div>
-      <div>
-        <h1
-          class="absolute top-[900px] left-[700px] text-5xl text-white font-bold"
-        >
-          <span class="block flex justify-center">THE</span>
-          <span class="block flex justify-center">GATHERING</span>
-        </h1>
+    <section class="relative">
+      <img src="img/hero.jpeg" alt="" class="w-full h-auto" />
+      <h1
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl text-white font-bold text-center"
+      >
+        <span class="block">THE</span>
+        <span class="block">GATHERING</span>
+      </h1>
+    </section>
+
+    <section
+      class="flex justify-center items-center mb-[150px] lg:mx-auto my-10 sm:my-20 md:my-30 lg:my-40 flex-wrap"
+    >
+      <div class="flex justify-center mt-10 sm:mt-20 md:mt-30 lg:mt-40">
+        <img
+          src="img/afr.png"
+          alt=""
+          class="h-40 sm:h-60 w-auto inline-block"
+        />
       </div>
     </section>
-    <section>
-      <div class="flex justify-center h-[600px] mt-[100px]">
-        <img src="img/afr.png" alt="" />
+    <section
+      class="flex flex-col lg:flex-row justify-between mb-4 w-full mt-10 bg-white lg:pt-40"
+    >
+      <div
+        class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-5 w-full lg:w-1/2 mx-5 lg:mx-20 mr-2"
+      >
+        <div>
+          <img src="img/shop1.jpg" alt="" class="w-full h-auto" />
+        </div>
+        <div>
+          <img src="img/shop1.jpg" alt="" class="w-full h-auto" />
+        </div>
+        <div>
+          <img src="img/shop3.jpg" alt="" class="w-full h-auto" />
+        </div>
+        <div>
+          <img src="img/shop3.jpg" alt="" class="w-full h-auto" />
+        </div>
       </div>
-    </section>
-    <section class="flex mt-10">
-      <div class="flex justify-center items-center h-screen">
-        <div class="mx-10 p-10">
-          <h1 class="text-center mb-2 text-2xl font-bold">BONNE CHOSES</h1>
-          <p class="text-center mb-4 text-2xl">
+
+      <div
+        class="flex flex-col justify-center items-center lg:h-screen w-full lg:w-1/2 lg:ml-2"
+      >
+        <div class="flex flex-col mx-5 lg:mx-10 p-5 lg:p-10 text-left">
+          <h1
+            class="mb-2 font-bold tracking-wider text-2xl font-p22-underground lg:text-3xl"
+          >
+            BONNE CHOSES
+          </h1>
+          <p class="text-lg lg:text-2xl mt-4 mb-10">
             Kojo has just released his highly-anticipated debut album Logos II
             and with it, he takes us back to his beginnings. Born Jason Guise,
             he grew up in Takoradi Ghana and then Verona, Italy with a strong
             affinity.
           </p>
           <button
-            class="p-4 mt-6 text-lg bg-black text-white rounded-lg flex items-center justify-center ml-40"
+            class="bg-black text-white border-none font-sweet-sans-pro py-3 px-10 lg:py-6 lg:px-18 tracking-wider w-full lg:w-40 max-w-1/2"
           >
             SHOP
           </button>
         </div>
       </div>
-
-      <div class="grid grid-cols-2 gap-5">
-        <div>
-          <img src="img/shop1.jpg" alt="" />
-        </div>
-        <div>
-          <img src="img/shop1.jpg" alt="" />
-        </div>
-        <div>
-          <img src="img/shop3.jpg" alt="" />
-        </div>
-        <div>
-          <img src="img/shop3.jpg" alt="" />
-        </div>
-      </div>
     </section>
+
     <footer
       id="contact"
-      class="bottom-0 left-0 w-full bg-black h-[530px] text-white"
+      class="bottom-0 left-0 w-full bg-black text-white mt-40"
     >
-      <div class="items-center flex flex-col py-4 justify-center">
+      <div
+        class="container items-center flex flex-col py-8 lg:py-20 justify-center h-screen"
+      >
         <img
-          src="img/logo.png"
+          src="img/wm.png"
           alt="Logo"
-          class="w-20 md:w-24 h-20 md:h-24 mb-4 mt-8 m-[40px]"
+          class="w-20 md:w-24 h-20 md:h-24 mb-4 lg:mb-0 lg:mr-8 m-4 flex-grow-0 flex-shrink-0"
         />
-      </div>
 
-      <div class="flex text-2xl justify-center mt-20">
-        <div class="mx-20 flex justify-center">
-          <p class="mr-[20px] text-5xl">MUSIC</p>
-          <p class="text-4xl">✺</p>
-        </div>
-        <div class="mx-20 flex justify-center">
-          <p class="mr-[20px]">CULTURE</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
-            />
-          </svg>
-        </div>
-        <div class="mx-20 flex justify-center">
-          <p class="mr-[20px]">ARTS</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
-            />
-          </svg>
-        </div>
-        <div class="mx-20 flex justify-center">
-          <p class="mr-[20px]">LIFESTYLE</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="items-center flex flex-col py-4 justify-center">
-        <button
-          class="p-4 mt-16 text-lg bg-white text-black flex items-center justify-center flex justify-center"
+        <div
+          class="flex flex-col lg:flex-row text-center lg:text-2xl justify-center mt-10 lg:mt-20"
         >
-          AKWAABA
-        </button>
+          <div class="mx-6 lg:mx-10 flex justify-center">
+            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">MUSIC</p>
+            <p class="text-lg lg:text-4xl">✺</p>
+          </div>
+          <div class="mx-6 lg:mx-10 flex justify-center">
+            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">CULTURE</p>
+            <p class="text-lg lg:text-4xl">✺</p>
+          </div>
+          <div class="mx-6 lg:mx-10 flex justify-center">
+            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">ART</p>
+            <p class="text-lg lg:text-4xl">✺</p>
+          </div>
+          <div class="mx-6 lg:mx-10 flex justify-center">
+            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">LIFESTYLE</p>
+            <p class="text-lg lg:text-4xl">✺</p>
+          </div>
+        </div>
+
+        <div
+          class="items-center flex flex-col py-4 justify-center mt-10 lg:mt-16"
+        >
+          <button
+            class="p-4 text-lg bg-white text-black flex items-center justify-center"
+          >
+            AKWAABA
+          </button>
+        </div>
       </div>
     </footer>
     <script src="index.js"></script>
