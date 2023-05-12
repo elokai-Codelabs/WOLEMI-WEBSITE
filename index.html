@@ -4,11 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link
+      rel="preload"
+      href="P22UndergroundPro-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="Coconat-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="P22UndergroundPro-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="Coconat-BoldExt.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Document</title>
+    <title>Wolemi</title>
   </head>
-  <body class="lg:mx-20 font-[coconat-bold] bg-gray-100">
+  <body
+    class="lg:mx-20 bg-gray-100 font-bold font-normal"
+    style="font-family: 'CoconatExt'"
+  >
     <header
       class="fixed top-0 left-0 right-0 z-50 flex flex-wrap justify-between items-center py-5 px-10 bg-gray-100 bg-opacity-100 lg:px-20"
     >
@@ -25,17 +61,16 @@
       <img
         src="img/men.png"
         alt=""
-        class="h-8 lg:h-10 cursor-pointer flex-grow-0 flex-shrink-0"
+        class="h-8 lg:h-10 w-6 cursor-pointer flex-grow-0 flex-shrink-0"
       />
     </header>
 
     <section class="relative">
       <img src="img/hero.jpeg" alt="" class="w-full h-auto" />
       <h1
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl text-white font-bold text-center"
+        class="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl sm:text-4xl text-white text-p22Underground font-bold text-center"
       >
-        <span class="block">THE</span>
-        <span class="block">GATHERING</span>
+        <span class="block text-p22Underground">THE GATHERING</span>
       </h1>
     </section>
 
@@ -54,6 +89,28 @@
       class="flex flex-col lg:flex-row justify-between mb-4 w-full mt-10 bg-white lg:pt-40"
     >
       <div
+        class="flex flex-col justify-center items-center lg:h-screen w-full lg:w-1/2 lg:ml-2"
+      >
+        <div class="flex flex-col mx-5 lg:mx-10 p-5 lg:p-10 text-left">
+          <h1
+            class="mb-2 font-bold tracking-wider text-2xl text-P22Underground font-P22Underground lg:text-3xl"
+          >
+            BONNE CHOSES
+          </h1>
+          <p class="text-lg lg:text-2xl mt-4 mb-10 text-Coconat font-Coconat">
+            Kojo has just released his highly-anticipated debut album Logos II
+            and with it, he takes us back to his beginnings. Born Jason Guise,
+            he grew up in Takoradi Ghana and then Verona, Italy with a strong
+            affinity.
+          </p>
+          <button
+            class="bg-black text-white border-none font-sweet-sans-pro py-3 px-10 lg:py-6 lg:px-18 tracking-wider w-full lg:w-40 max-w-1/2"
+          >
+            SHOP
+          </button>
+        </div>
+      </div>
+      <div
         class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-5 w-full lg:w-1/2 mx-5 lg:mx-20 mr-2"
       >
         <div>
@@ -69,62 +126,58 @@
           <img src="img/shop3.jpg" alt="" class="w-full h-auto" />
         </div>
       </div>
-
-      <div
-        class="flex flex-col justify-center items-center lg:h-screen w-full lg:w-1/2 lg:ml-2"
-      >
-        <div class="flex flex-col mx-5 lg:mx-10 p-5 lg:p-10 text-left">
-          <h1
-            class="mb-2 font-bold tracking-wider text-2xl font-p22-underground lg:text-3xl"
-          >
-            BONNE CHOSES
-          </h1>
-          <p class="text-lg lg:text-2xl mt-4 mb-10">
-            Kojo has just released his highly-anticipated debut album Logos II
-            and with it, he takes us back to his beginnings. Born Jason Guise,
-            he grew up in Takoradi Ghana and then Verona, Italy with a strong
-            affinity.
-          </p>
-          <button
-            class="bg-black text-white border-none font-sweet-sans-pro py-3 px-10 lg:py-6 lg:px-18 tracking-wider w-full lg:w-40 max-w-1/2"
-          >
-            SHOP
-          </button>
-        </div>
-      </div>
     </section>
 
     <footer
       id="contact"
-      class="bottom-0 left-0 w-full bg-black text-white mt-40"
+      class="bottom-0 left-0 w-full h-[50rem] bg-black text-white mt-40"
     >
-      <div
-        class="container items-center flex flex-col py-8 lg:py-20 justify-center h-screen"
-      >
-        <img
-          src="img/wm.png"
-          alt="Logo"
-          class="w-20 md:w-24 h-20 md:h-24 mb-4 lg:mb-0 lg:mr-8 m-4 flex-grow-0 flex-shrink-0"
-        />
+      <div class="container items-center flex flex-col py-8 lg:py-20 h-screen">
+        <div class="h-auto w-[11rem] my-20">
+          <img
+            src="img/wm.png"
+            alt="Logo"
+            class="w-20 md:w-24 h-20 md:h-24 mb-4 lg:mb-0 lg:mr-8 m-4 flex-grow-0 flex-shrink-0"
+          />
+        </div>
 
         <div
           class="flex flex-col lg:flex-row text-center lg:text-2xl justify-center mt-10 lg:mt-20"
         >
-          <div class="mx-6 lg:mx-10 flex justify-center">
-            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">MUSIC</p>
-            <p class="text-lg lg:text-4xl">✺</p>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            MUSIC
           </div>
-          <div class="mx-6 lg:mx-10 flex justify-center">
-            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">CULTURE</p>
-            <p class="text-lg lg:text-4xl">✺</p>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            ✺
           </div>
-          <div class="mx-6 lg:mx-10 flex justify-center">
-            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">ART</p>
-            <p class="text-lg lg:text-4xl">✺</p>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            CULTURE
           </div>
-          <div class="mx-6 lg:mx-10 flex justify-center">
-            <p class="mr-2 lg:mr-4 text-lg lg:text-4xl">LIFESTYLE</p>
-            <p class="text-lg lg:text-4xl">✺</p>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            ✺
+          </div>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            ART
+          </div>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            ✺
+          </div>
+          <div
+            class="lg:mx-12 sm:mx-8 mx-6 font-bold text-2xl md:text-3xl lg:text-4xl"
+          >
+            LIFESTYLE
           </div>
         </div>
 
@@ -139,6 +192,7 @@
         </div>
       </div>
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "P22UndergroundBold";
+  src: url("P22UndergroundPro-Bold.woff2") format("woff2"),
+    url("P22UndergroundPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Coconat";
+  src: url("Coconat-Regular.woff2") format("woff2"),
+    url("Coconat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CoconatExt";
+  src: url("Coconat-BoldExt.woff2") format("woff2"),
+    url("Coconat-BoldExt.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "P22UndergroundMed";
+  src: url("P22UndergroundPro-Medium.woff2") format("woff2"),
+    url("P22UndergroundPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "P22UndergroundLight";
+  src: url("P22UndergroundPro-Light.woff2") format("woff2"),
+    url("P22UndergroundPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "P22UndergroundReg";
+  src: url("P22UndergroundPro-Regular.woff2") format("woff2"),
+    url("P22UndergroundPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "P22UndergroundSemBd";
+  src: url("P22UndergroundPro-SemiBold.woff2") format("woff2"),
+    url("P22UndergroundPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "P22UndergroundThin";
+  src: url("P22UndergroundPro-Thin.woff2") format("woff2"),
+    url("P22UndergroundPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
